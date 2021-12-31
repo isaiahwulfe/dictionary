@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Merriam-Webster Collegiate Dictionary</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <!-- Don't use this in production: -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #b0e0e6 0%, #000099 100%);
+    }
+    span {
+      font-size: .85em;
+      font-style: italic;
+      color: #000099;
+    }
+    #subs {
+      border-radius: 3px;
+      border: 0;
+      background-color: #000099;
+      color: white;
+    }
+    #subs:hover {
+      background-color: #b0e0e6;
+    }
+    #alts:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+    #historical {
+      font-style: italic;
+      font-size: .75em;
+    }
+    #search {
+      color: blue; 
+      border: 1px solid blue; 
+      border-radius: 3px; 
+      background-color: transparent; 
+      height: 30px; 
+      width: 100px;
+    }
+    #search:hover {
+      background-color: blue;
+      color: white;
+    }
+    #head {
+      margin: 50px; 
+    }
+  </style>  
+</head>
+
+<body>
+  <div id="head">
+
+  </div>
+
+  <!-- We will put our React component inside this div. -->
+  <div id="root"></div>
+
+  <!-- Load React. -->
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-router@5/umd/react-router.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-router-dom@5/umd/react-router-dom.min.js"></script>
+  <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+  <!-- Load our Axios and our component. -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="mwApp-demo.jsx" defer type="text/babel"></script>
+</body>
+
+</html>
